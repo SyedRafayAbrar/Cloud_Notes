@@ -7,14 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B81CECCD6A44EE083FA36B7 /* Pods_CloudNotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE717BA39C9E7BC5E2407BE /* Pods_CloudNotes.framework */; };
+		C8A11DC0201BB0E9004A4E8E /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A11DBE201BB0E9004A4E8E /* ListTableViewCell.swift */; };
+		C8A11DC1201BB0E9004A4E8E /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8A11DBF201BB0E9004A4E8E /* ListTableViewCell.xib */; };
+		C8A11DC4201BB113004A4E8E /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A11DC3201BB113004A4E8E /* ListViewController.swift */; };
+		C8A11DC6201BB12E004A4E8E /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A11DC5201BB12E004A4E8E /* NotesViewController.swift */; };
+		C8A11DE6201BBAC8004A4E8E /* BEMAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A11DDF201BBAC7004A4E8E /* BEMAnimationManager.m */; };
+		C8A11DE7201BBAC8004A4E8E /* BEMPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A11DE0201BBAC7004A4E8E /* BEMPathManager.m */; };
+		C8A11DE8201BBAC8004A4E8E /* BEMCheckBoxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A11DE1201BBAC7004A4E8E /* BEMCheckBoxGroup.m */; };
+		C8A11DE9201BBAC8004A4E8E /* BEMCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A11DE3201BBAC7004A4E8E /* BEMCheckBox.m */; };
 		C8A8B42E201B8BB1009EFB9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A8B42D201B8BB1009EFB9D /* AppDelegate.swift */; };
 		C8A8B430201B8BB1009EFB9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A8B42F201B8BB1009EFB9D /* ViewController.swift */; };
 		C8A8B433201B8BB1009EFB9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8A8B431201B8BB1009EFB9D /* Main.storyboard */; };
 		C8A8B435201B8BB1009EFB9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8A8B434201B8BB1009EFB9D /* Assets.xcassets */; };
 		C8A8B438201B8BB1009EFB9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8A8B436201B8BB1009EFB9D /* LaunchScreen.storyboard */; };
+		C8A8B442201B8DCF009EFB9D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8A8B441201B8DCF009EFB9D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3392B78A65BBD548143E42FC /* Pods-CloudNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudNotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudNotes/Pods-CloudNotes.debug.xcconfig"; sourceTree = "<group>"; };
+		9F61E9CFC442DE7D5186C5A2 /* Pods-CloudNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudNotes.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudNotes/Pods-CloudNotes.release.xcconfig"; sourceTree = "<group>"; };
+		BDE717BA39C9E7BC5E2407BE /* Pods_CloudNotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudNotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8A11DBE201BB0E9004A4E8E /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		C8A11DBF201BB0E9004A4E8E /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+		C8A11DC3201BB113004A4E8E /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		C8A11DC5201BB12E004A4E8E /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		C8A11DDC201BB98C004A4E8E /* CheckBoxBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckBoxBridgingHeader.h; sourceTree = "<group>"; };
+		C8A11DDE201BBAC7004A4E8E /* BEMCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCheckBox.h; sourceTree = "<group>"; };
+		C8A11DDF201BBAC7004A4E8E /* BEMAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMAnimationManager.m; sourceTree = "<group>"; };
+		C8A11DE0201BBAC7004A4E8E /* BEMPathManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMPathManager.m; sourceTree = "<group>"; };
+		C8A11DE1201BBAC7004A4E8E /* BEMCheckBoxGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCheckBoxGroup.m; sourceTree = "<group>"; };
+		C8A11DE2201BBAC7004A4E8E /* BEMAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMAnimationManager.h; sourceTree = "<group>"; };
+		C8A11DE3201BBAC7004A4E8E /* BEMCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCheckBox.m; sourceTree = "<group>"; };
+		C8A11DE4201BBAC7004A4E8E /* BEMPathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMPathManager.h; sourceTree = "<group>"; };
+		C8A11DE5201BBAC7004A4E8E /* BEMCheckBoxGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCheckBoxGroup.h; sourceTree = "<group>"; };
 		C8A8B42A201B8BB1009EFB9D /* CloudNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8A8B42D201B8BB1009EFB9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8A8B42F201B8BB1009EFB9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +48,7 @@
 		C8A8B434201B8BB1009EFB9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8A8B437201B8BB1009EFB9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8A8B439201B8BB1009EFB9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8A8B441201B8DCF009EFB9D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +56,62 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B81CECCD6A44EE083FA36B7 /* Pods_CloudNotes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16FE463E353DFA1B6FF13A06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDE717BA39C9E7BC5E2407BE /* Pods_CloudNotes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADF2C31A54D85F23D1D477A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3392B78A65BBD548143E42FC /* Pods-CloudNotes.debug.xcconfig */,
+				9F61E9CFC442DE7D5186C5A2 /* Pods-CloudNotes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C8A11DC2201BB0F2004A4E8E /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C8A11DBE201BB0E9004A4E8E /* ListTableViewCell.swift */,
+				C8A11DBF201BB0E9004A4E8E /* ListTableViewCell.xib */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		C8A11DDD201BBAC7004A4E8E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C8A11DDE201BBAC7004A4E8E /* BEMCheckBox.h */,
+				C8A11DDF201BBAC7004A4E8E /* BEMAnimationManager.m */,
+				C8A11DE0201BBAC7004A4E8E /* BEMPathManager.m */,
+				C8A11DE1201BBAC7004A4E8E /* BEMCheckBoxGroup.m */,
+				C8A11DE2201BBAC7004A4E8E /* BEMAnimationManager.h */,
+				C8A11DE3201BBAC7004A4E8E /* BEMCheckBox.m */,
+				C8A11DE4201BBAC7004A4E8E /* BEMPathManager.h */,
+				C8A11DE5201BBAC7004A4E8E /* BEMCheckBoxGroup.h */,
+			);
+			name = Classes;
+			path = "../../../../Downloads/BEMCheckBox-master-2/Classes";
+			sourceTree = "<group>";
+		};
 		C8A8B421201B8BB1009EFB9D = {
 			isa = PBXGroup;
 			children = (
 				C8A8B42C201B8BB1009EFB9D /* CloudNotes */,
 				C8A8B42B201B8BB1009EFB9D /* Products */,
+				ADF2C31A54D85F23D1D477A2 /* Pods */,
+				16FE463E353DFA1B6FF13A06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +126,18 @@
 		C8A8B42C201B8BB1009EFB9D /* CloudNotes */ = {
 			isa = PBXGroup;
 			children = (
+				C8A11DDC201BB98C004A4E8E /* CheckBoxBridgingHeader.h */,
 				C8A8B42D201B8BB1009EFB9D /* AppDelegate.swift */,
 				C8A8B42F201B8BB1009EFB9D /* ViewController.swift */,
 				C8A8B431201B8BB1009EFB9D /* Main.storyboard */,
+				C8A11DC5201BB12E004A4E8E /* NotesViewController.swift */,
+				C8A11DC3201BB113004A4E8E /* ListViewController.swift */,
+				C8A11DDD201BBAC7004A4E8E /* Classes */,
+				C8A11DC2201BB0F2004A4E8E /* Custom Cell */,
 				C8A8B434201B8BB1009EFB9D /* Assets.xcassets */,
 				C8A8B436201B8BB1009EFB9D /* LaunchScreen.storyboard */,
 				C8A8B439201B8BB1009EFB9D /* Info.plist */,
+				C8A8B441201B8DCF009EFB9D /* GoogleService-Info.plist */,
 			);
 			path = CloudNotes;
 			sourceTree = "<group>";
@@ -71,9 +149,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8A8B43C201B8BB1009EFB9D /* Build configuration list for PBXNativeTarget "CloudNotes" */;
 			buildPhases = (
+				A6C39220B5CAC3F567AE060E /* [CP] Check Pods Manifest.lock */,
 				C8A8B426201B8BB1009EFB9D /* Sources */,
 				C8A8B427201B8BB1009EFB9D /* Frameworks */,
 				C8A8B428201B8BB1009EFB9D /* Resources */,
+				2277B3A10313CF9EF42558A8 /* [CP] Embed Pods Frameworks */,
+				B6968953DEDF62C945037F99 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +204,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8A8B442201B8DCF009EFB9D /* GoogleService-Info.plist in Resources */,
+				C8A11DC1201BB0E9004A4E8E /* ListTableViewCell.xib in Resources */,
 				C8A8B438201B8BB1009EFB9D /* LaunchScreen.storyboard in Resources */,
 				C8A8B435201B8BB1009EFB9D /* Assets.xcassets in Resources */,
 				C8A8B433201B8BB1009EFB9D /* Main.storyboard in Resources */,
@@ -131,13 +214,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2277B3A10313CF9EF42558A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CloudNotes/Pods-CloudNotes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudNotes/Pods-CloudNotes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6C39220B5CAC3F567AE060E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CloudNotes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6968953DEDF62C945037F99 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudNotes/Pods-CloudNotes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C8A8B426201B8BB1009EFB9D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8A11DE7201BBAC8004A4E8E /* BEMPathManager.m in Sources */,
+				C8A11DE6201BBAC8004A4E8E /* BEMAnimationManager.m in Sources */,
 				C8A8B430201B8BB1009EFB9D /* ViewController.swift in Sources */,
+				C8A11DC6201BB12E004A4E8E /* NotesViewController.swift in Sources */,
 				C8A8B42E201B8BB1009EFB9D /* AppDelegate.swift in Sources */,
+				C8A11DC4201BB113004A4E8E /* ListViewController.swift in Sources */,
+				C8A11DE9201BBAC8004A4E8E /* BEMCheckBox.m in Sources */,
+				C8A11DE8201BBAC8004A4E8E /* BEMCheckBoxGroup.m in Sources */,
+				C8A11DC0201BB0E9004A4E8E /* ListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,14 +434,17 @@
 		};
 		C8A8B43D201B8BB1009EFB9D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3392B78A65BBD548143E42FC /* Pods-CloudNotes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 78T6UPLU6S;
 				INFOPLIST_FILE = CloudNotes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Rafay.CloudNotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = CloudNotes/CheckBoxBridgingHeader.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,14 +452,17 @@
 		};
 		C8A8B43E201B8BB1009EFB9D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F61E9CFC442DE7D5186C5A2 /* Pods-CloudNotes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 78T6UPLU6S;
 				INFOPLIST_FILE = CloudNotes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Rafay.CloudNotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = CloudNotes/CheckBoxBridgingHeader.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
