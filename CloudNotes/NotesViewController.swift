@@ -7,21 +7,62 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
 
-class NotesViewController: UIViewController {
 
+class NotesViewController: UIViewController,UITableViewDelegate {
+    @IBOutlet var table: UITableView!
+    var current_User:String!
+    var db:Firestore!
+
+    // DidLoad Method
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+table.separatorColor = UIColor.red
+       table.reloadData()
+     db = Firestore.firestore()
+        let user = Auth.auth().currentUser
+        if let user = user {
+            current_User = user.email
+        }        // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        table.reloadData()
 
-        // Do any additional setup after loading the view.
     }
 
+    @IBAction func AddNotes(_ sender: Any) {
+    }
+    @IBAction func homePressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
 
+    @IBAction func syncPressed(_ sender: Any) {
+        var ref: DocumentReference? = nil
+//        for i in 0...notesArray.count{
+        db.collection("Notes").document(current_User).setData(["notes":notesArray]) { (error) in
+            if let error = error {
+                print(error)
+            }
+        }
+//        ref =  db.collection("Notes").addDocument(data: [
+//            "Notes":notesArray,
+//            "ID":current_User
+//            ], completion: { (error) in
+//            if let error = error {
+//                print(error)
+//            }
+//    })
+//        }
+    }
     /*
     // MARK: - Navigation
 
@@ -31,5 +72,49 @@ class NotesViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func fetchPressed(_ sender: Any) {
+        let docRef = db.collection("Notes").document(current_User)
+        
+        docRef.getDocument { (document, error) in
+            if let document = document {
+                if let data = document.data()["notes"]! as? [String]{
+                    print("++++\(data.count)")
+                }
+                
+            } else {
+                print("Document does not exist")
+            }
+        }
+    }
+    
+    
+    
+}
+extension NotesViewController:UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return notesArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let tempCell = Bundle.main.loadNibNamed("NotesTableViewCell", owner: self, options: nil)?.first as! NotesTableViewCell
+        tempCell.textArea.text = notesArray[indexPath.row]
+        return tempCell
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
+    }
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    
+    /**
+     * Called when the user click on the view (outside the UITextField).
+     */
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.table.endEditing(true)
+    }
 
+    
 }

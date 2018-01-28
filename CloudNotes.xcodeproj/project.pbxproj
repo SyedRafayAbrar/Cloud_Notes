@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2B81CECCD6A44EE083FA36B7 /* Pods_CloudNotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE717BA39C9E7BC5E2407BE /* Pods_CloudNotes.framework */; };
+		C8580613201DDF99007600B7 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8580612201DDF99007600B7 /* File.swift */; };
+		C8580616201DE0AC007600B7 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8580614201DE0AC007600B7 /* KeychainWrapper.swift */; };
+		C8580617201DE0AC007600B7 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8580615201DE0AC007600B7 /* KeychainItemAccessibility.swift */; };
+		C8580619201DE307007600B7 /* AddNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8580618201DE307007600B7 /* AddNotesViewController.swift */; };
 		C8A11DC0201BB0E9004A4E8E /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A11DBE201BB0E9004A4E8E /* ListTableViewCell.swift */; };
 		C8A11DC1201BB0E9004A4E8E /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8A11DBF201BB0E9004A4E8E /* ListTableViewCell.xib */; };
 		C8A11DC4201BB113004A4E8E /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A11DC3201BB113004A4E8E /* ListViewController.swift */; };
@@ -17,17 +21,24 @@
 		C8A11DE8201BBAC8004A4E8E /* BEMCheckBoxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A11DE1201BBAC7004A4E8E /* BEMCheckBoxGroup.m */; };
 		C8A11DE9201BBAC8004A4E8E /* BEMCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A11DE3201BBAC7004A4E8E /* BEMCheckBox.m */; };
 		C8A8B42E201B8BB1009EFB9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A8B42D201B8BB1009EFB9D /* AppDelegate.swift */; };
-		C8A8B430201B8BB1009EFB9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A8B42F201B8BB1009EFB9D /* ViewController.swift */; };
+		C8A8B430201B8BB1009EFB9D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A8B42F201B8BB1009EFB9D /* LoginViewController.swift */; };
 		C8A8B433201B8BB1009EFB9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8A8B431201B8BB1009EFB9D /* Main.storyboard */; };
 		C8A8B435201B8BB1009EFB9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8A8B434201B8BB1009EFB9D /* Assets.xcassets */; };
 		C8A8B438201B8BB1009EFB9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8A8B436201B8BB1009EFB9D /* LaunchScreen.storyboard */; };
 		C8A8B442201B8DCF009EFB9D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8A8B441201B8DCF009EFB9D /* GoogleService-Info.plist */; };
+		C8B161CB201CC6E700F3A94B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B161CA201CC6E700F3A94B /* ViewController.swift */; };
+		C8B161CE201CC7C300F3A94B /* NotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B161CC201CC7C300F3A94B /* NotesTableViewCell.swift */; };
+		C8B161CF201CC7C300F3A94B /* NotesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8B161CD201CC7C300F3A94B /* NotesTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3392B78A65BBD548143E42FC /* Pods-CloudNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudNotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudNotes/Pods-CloudNotes.debug.xcconfig"; sourceTree = "<group>"; };
 		9F61E9CFC442DE7D5186C5A2 /* Pods-CloudNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudNotes.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudNotes/Pods-CloudNotes.release.xcconfig"; sourceTree = "<group>"; };
 		BDE717BA39C9E7BC5E2407BE /* Pods_CloudNotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudNotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8580612201DDF99007600B7 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		C8580614201DE0AC007600B7 /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		C8580615201DE0AC007600B7 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		C8580618201DE307007600B7 /* AddNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNotesViewController.swift; sourceTree = "<group>"; };
 		C8A11DBE201BB0E9004A4E8E /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		C8A11DBF201BB0E9004A4E8E /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
 		C8A11DC3201BB113004A4E8E /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -43,12 +54,15 @@
 		C8A11DE5201BBAC7004A4E8E /* BEMCheckBoxGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCheckBoxGroup.h; sourceTree = "<group>"; };
 		C8A8B42A201B8BB1009EFB9D /* CloudNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8A8B42D201B8BB1009EFB9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C8A8B42F201B8BB1009EFB9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C8A8B42F201B8BB1009EFB9D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C8A8B432201B8BB1009EFB9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C8A8B434201B8BB1009EFB9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8A8B437201B8BB1009EFB9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8A8B439201B8BB1009EFB9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8A8B441201B8DCF009EFB9D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C8B161CA201CC6E700F3A94B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C8B161CC201CC7C300F3A94B /* NotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewCell.swift; sourceTree = "<group>"; };
+		C8B161CD201CC7C300F3A94B /* NotesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotesTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,12 +140,18 @@
 		C8A8B42C201B8BB1009EFB9D /* CloudNotes */ = {
 			isa = PBXGroup;
 			children = (
+				C8580612201DDF99007600B7 /* File.swift */,
 				C8A11DDC201BB98C004A4E8E /* CheckBoxBridgingHeader.h */,
 				C8A8B42D201B8BB1009EFB9D /* AppDelegate.swift */,
-				C8A8B42F201B8BB1009EFB9D /* ViewController.swift */,
+				C8A8B42F201B8BB1009EFB9D /* LoginViewController.swift */,
 				C8A8B431201B8BB1009EFB9D /* Main.storyboard */,
+				C8580618201DE307007600B7 /* AddNotesViewController.swift */,
+				C8B161CA201CC6E700F3A94B /* ViewController.swift */,
 				C8A11DC5201BB12E004A4E8E /* NotesViewController.swift */,
 				C8A11DC3201BB113004A4E8E /* ListViewController.swift */,
+				C8580615201DE0AC007600B7 /* KeychainItemAccessibility.swift */,
+				C8580614201DE0AC007600B7 /* KeychainWrapper.swift */,
+				C8B161D0201CC7CC00F3A94B /* NotesCustomCell */,
 				C8A11DDD201BBAC7004A4E8E /* Classes */,
 				C8A11DC2201BB0F2004A4E8E /* Custom Cell */,
 				C8A8B434201B8BB1009EFB9D /* Assets.xcassets */,
@@ -140,6 +160,15 @@
 				C8A8B441201B8DCF009EFB9D /* GoogleService-Info.plist */,
 			);
 			path = CloudNotes;
+			sourceTree = "<group>";
+		};
+		C8B161D0201CC7CC00F3A94B /* NotesCustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				C8B161CC201CC7C300F3A94B /* NotesTableViewCell.swift */,
+				C8B161CD201CC7C300F3A94B /* NotesTableViewCell.xib */,
+			);
+			path = NotesCustomCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +238,7 @@
 				C8A8B438201B8BB1009EFB9D /* LaunchScreen.storyboard in Resources */,
 				C8A8B435201B8BB1009EFB9D /* Assets.xcassets in Resources */,
 				C8A8B433201B8BB1009EFB9D /* Main.storyboard in Resources */,
+				C8B161CF201CC7C300F3A94B /* NotesTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +256,8 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
@@ -239,6 +271,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
@@ -292,13 +326,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8A11DE7201BBAC8004A4E8E /* BEMPathManager.m in Sources */,
+				C8580613201DDF99007600B7 /* File.swift in Sources */,
 				C8A11DE6201BBAC8004A4E8E /* BEMAnimationManager.m in Sources */,
-				C8A8B430201B8BB1009EFB9D /* ViewController.swift in Sources */,
+				C8A8B430201B8BB1009EFB9D /* LoginViewController.swift in Sources */,
 				C8A11DC6201BB12E004A4E8E /* NotesViewController.swift in Sources */,
+				C8580617201DE0AC007600B7 /* KeychainItemAccessibility.swift in Sources */,
+				C8B161CE201CC7C300F3A94B /* NotesTableViewCell.swift in Sources */,
 				C8A8B42E201B8BB1009EFB9D /* AppDelegate.swift in Sources */,
 				C8A11DC4201BB113004A4E8E /* ListViewController.swift in Sources */,
 				C8A11DE9201BBAC8004A4E8E /* BEMCheckBox.m in Sources */,
 				C8A11DE8201BBAC8004A4E8E /* BEMCheckBoxGroup.m in Sources */,
+				C8580619201DE307007600B7 /* AddNotesViewController.swift in Sources */,
+				C8B161CB201CC6E700F3A94B /* ViewController.swift in Sources */,
+				C8580616201DE0AC007600B7 /* KeychainWrapper.swift in Sources */,
 				C8A11DC0201BB0E9004A4E8E /* ListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
