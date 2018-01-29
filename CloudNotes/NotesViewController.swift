@@ -46,22 +46,16 @@ table.separatorColor = UIColor.red
     
 
     @IBAction func syncPressed(_ sender: Any) {
-        var ref: DocumentReference? = nil
-//        for i in 0...notesArray.count{
+        
+        
+        UIApplication.shared.beginIgnoringInteractionEvents()
         db.collection("Notes").document(current_User).setData(["notes":notesArray]) { (error) in
             if let error = error {
                 print(error)
             }
         }
-//        ref =  db.collection("Notes").addDocument(data: [
-//            "Notes":notesArray,
-//            "ID":current_User
-//            ], completion: { (error) in
-//            if let error = error {
-//                print(error)
-//            }
-//    })
-//        }
+     
+    
     }
     /*
     // MARK: - Navigation

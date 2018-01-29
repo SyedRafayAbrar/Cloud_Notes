@@ -8,5 +8,9 @@
 //
 
 import Foundation
+
+var todoArray = [String]()
 var notesArray = [String]()
 var fetchedNotes = [String]()
+let KEY_UID = "uid"
+

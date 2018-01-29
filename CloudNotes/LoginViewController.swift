@@ -9,6 +9,8 @@
 import UIKit
 import FirebaseAuth
 import Firebase
+import SwiftKeychainWrapper
+
 class LoginViewController: UIViewController {
 
     @IBOutlet var emailText: UITextField!
@@ -18,6 +20,13 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        if let _=KeychainWrapper.standard.string(forKey: KEY_UID){
+            performSegue(withIdentifier: "toMenu", sender: nil)
+        }
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -28,6 +37,10 @@ class LoginViewController: UIViewController {
         Auth.auth().signIn(withEmail: emailText.text!, password: passwordtext.text!) { (user, error) in
             if error != nil {
                 print(error!)
+                let alert=UIAlertController(title: "Error", message: "Password Shold be 6 or more than 6 characters", preferredStyle: UIAlertControllerStyle.alert)
+                let cancel = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+                alert.addAction(cancel)
+                self.present(alert, animated: true, completion: nil)
                 Auth.auth().createUser(withEmail: self.emailText.text!, password: self.passwordtext.text!) { (user, error) in
                     if error != nil {
                         let alert=UIAlertController(title: "Error", message: "Password Shold be 6 or more than 6 characters", preferredStyle: UIAlertControllerStyle.alert)
@@ -36,25 +49,32 @@ class LoginViewController: UIViewController {
                         print(error!)
                         self.present(alert, animated: true, completion: nil)
                     }else {
-                        let alert=UIAlertController(title: "Done!", message: "UserCreation Succeeded", preferredStyle: UIAlertControllerStyle.alert)
-                        let cancel = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
-                        alert.addAction(cancel)
+                        if let user = user {
+                            self.completeLogin(id: user.uid)
+                        }
+                
                         print("++++new User Created")
-                        self.present(alert, animated: true, completion: nil)
                         
+                        self.present(alert, animated: true, completion: nil)
+                        DispatchQueue.main.async {
+                            [unowned self] in
+                            self.performSegue(withIdentifier: "toMenu", sender: self)
+                        }
                     }
 
                 }
                 
             } else {
-                let alert=UIAlertController(title: "Done!", message: "SignIn Succeeded", preferredStyle: UIAlertControllerStyle.alert)
-                let cancel = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
-                alert.addAction(cancel)
-                self.present(alert, animated: true, completion: nil)
-//                DispatchQueue.main.async {
-//                    [unowned self] in
-//                    self.performSegue(withIdentifier: "toList", sender: self)
-//                }
+                print("SignIn Successfully")
+                DispatchQueue.main.async {
+                    [unowned self] in
+                    self.performSegue(withIdentifier: "toMenu", sender: self)
+                    if let user = user {
+                        self.completeLogin(id: user.uid)
+                    }
+                    
+                    
+                }
             }
         }
     }
@@ -72,5 +92,9 @@ class LoginViewController: UIViewController {
         self.view.endEditing(true)
     }
   
+    func completeLogin(id:String){
+        KeychainWrapper.standard.set(id, forKey: KEY_UID)
+    }
+    
 }
 

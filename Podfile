@@ -10,4 +10,6 @@ pod 'Firebase/Core'
 pod 'Firebase/Firestore'
 pod 'Firebase/Auth'
 pod 'RealmSwift'
+pod 'SwiftKeychainWrapper'
+
 end

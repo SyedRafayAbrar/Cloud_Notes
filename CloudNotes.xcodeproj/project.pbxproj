@@ -9,9 +9,8 @@
 /* Begin PBXBuildFile section */
 		2B81CECCD6A44EE083FA36B7 /* Pods_CloudNotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE717BA39C9E7BC5E2407BE /* Pods_CloudNotes.framework */; };
 		C8580613201DDF99007600B7 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8580612201DDF99007600B7 /* File.swift */; };
-		C8580616201DE0AC007600B7 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8580614201DE0AC007600B7 /* KeychainWrapper.swift */; };
-		C8580617201DE0AC007600B7 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8580615201DE0AC007600B7 /* KeychainItemAccessibility.swift */; };
 		C8580619201DE307007600B7 /* AddNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8580618201DE307007600B7 /* AddNotesViewController.swift */; };
+		C879CBB3201F9542005E9610 /* StarterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C879CBB2201F9542005E9610 /* StarterViewController.swift */; };
 		C8A11DC0201BB0E9004A4E8E /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A11DBE201BB0E9004A4E8E /* ListTableViewCell.swift */; };
 		C8A11DC1201BB0E9004A4E8E /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8A11DBF201BB0E9004A4E8E /* ListTableViewCell.xib */; };
 		C8A11DC4201BB113004A4E8E /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A11DC3201BB113004A4E8E /* ListViewController.swift */; };
@@ -36,9 +35,8 @@
 		9F61E9CFC442DE7D5186C5A2 /* Pods-CloudNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudNotes.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudNotes/Pods-CloudNotes.release.xcconfig"; sourceTree = "<group>"; };
 		BDE717BA39C9E7BC5E2407BE /* Pods_CloudNotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudNotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8580612201DDF99007600B7 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
-		C8580614201DE0AC007600B7 /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
-		C8580615201DE0AC007600B7 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
 		C8580618201DE307007600B7 /* AddNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNotesViewController.swift; sourceTree = "<group>"; };
+		C879CBB2201F9542005E9610 /* StarterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterViewController.swift; sourceTree = "<group>"; };
 		C8A11DBE201BB0E9004A4E8E /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		C8A11DBF201BB0E9004A4E8E /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
 		C8A11DC3201BB113004A4E8E /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -145,12 +143,11 @@
 				C8A8B42D201B8BB1009EFB9D /* AppDelegate.swift */,
 				C8A8B42F201B8BB1009EFB9D /* LoginViewController.swift */,
 				C8A8B431201B8BB1009EFB9D /* Main.storyboard */,
+				C879CBB2201F9542005E9610 /* StarterViewController.swift */,
 				C8580618201DE307007600B7 /* AddNotesViewController.swift */,
 				C8B161CA201CC6E700F3A94B /* ViewController.swift */,
 				C8A11DC5201BB12E004A4E8E /* NotesViewController.swift */,
 				C8A11DC3201BB113004A4E8E /* ListViewController.swift */,
-				C8580615201DE0AC007600B7 /* KeychainItemAccessibility.swift */,
-				C8580614201DE0AC007600B7 /* KeychainWrapper.swift */,
 				C8B161D0201CC7CC00F3A94B /* NotesCustomCell */,
 				C8A11DDD201BBAC7004A4E8E /* Classes */,
 				C8A11DC2201BB0F2004A4E8E /* Custom Cell */,
@@ -258,6 +255,7 @@
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
@@ -273,6 +271,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
@@ -327,10 +326,10 @@
 			files = (
 				C8A11DE7201BBAC8004A4E8E /* BEMPathManager.m in Sources */,
 				C8580613201DDF99007600B7 /* File.swift in Sources */,
+				C879CBB3201F9542005E9610 /* StarterViewController.swift in Sources */,
 				C8A11DE6201BBAC8004A4E8E /* BEMAnimationManager.m in Sources */,
 				C8A8B430201B8BB1009EFB9D /* LoginViewController.swift in Sources */,
 				C8A11DC6201BB12E004A4E8E /* NotesViewController.swift in Sources */,
-				C8580617201DE0AC007600B7 /* KeychainItemAccessibility.swift in Sources */,
 				C8B161CE201CC7C300F3A94B /* NotesTableViewCell.swift in Sources */,
 				C8A8B42E201B8BB1009EFB9D /* AppDelegate.swift in Sources */,
 				C8A11DC4201BB113004A4E8E /* ListViewController.swift in Sources */,
@@ -338,7 +337,6 @@
 				C8A11DE8201BBAC8004A4E8E /* BEMCheckBoxGroup.m in Sources */,
 				C8580619201DE307007600B7 /* AddNotesViewController.swift in Sources */,
 				C8B161CB201CC6E700F3A94B /* ViewController.swift in Sources */,
-				C8580616201DE0AC007600B7 /* KeychainWrapper.swift in Sources */,
 				C8A11DC0201BB0E9004A4E8E /* ListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

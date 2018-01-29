@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4DD489606B4CA270D2DB01C15527BCC7"
+               BlueprintIdentifier = "8A721D9A8C2A199E123871AF220D2AC4"
                BuildableName = "Pods_CloudNotes.framework"
                BlueprintName = "Pods-CloudNotes"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4DD489606B4CA270D2DB01C15527BCC7"
+            BlueprintIdentifier = "8A721D9A8C2A199E123871AF220D2AC4"
             BuildableName = "Pods_CloudNotes.framework"
             BlueprintName = "Pods-CloudNotes"
             ReferencedContainer = "container:Pods.xcodeproj">
