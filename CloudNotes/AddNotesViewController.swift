@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class AddNotesViewController: UIViewController {
     @IBOutlet var textArea: UITextView!
@@ -25,32 +26,20 @@ blur.layer.cornerRadius = 15
     
 
     @IBAction func AddPressed(_ sender: Any) {
-        notesArray.append(textArea.text)
-        if textArea.text != nil {
+
+            let notesObj = Notes()
+            notesObj._Notes = textArea.text!
+            notesObj.writeRealm()
+        
+        notesArray.append(textArea.text!)
             dismiss(animated: true, completion: nil)
-        }else{
-            let alert = UIAlertController(title: "Error", message: "Text Area is Emplty", preferredStyle: UIAlertControllerStyle.alert)
-            let cancel = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
-            alert.addAction(cancel)
-            self.present(alert, animated: true, completion: nil)
-        }
+       
     }
     
     @IBAction func cancelPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
-    
-    
-    /**
-     * Called when the user click on the view (outside the UITextField).
-     */
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
+
     
 }

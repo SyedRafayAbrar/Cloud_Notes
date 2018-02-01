@@ -19,27 +19,30 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="64.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Uz-gp-IwO">
-                        <rect key="frame" x="73" y="0.0" width="247" height="65"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Uz-gp-IwO">
+                        <rect key="frame" x="77" y="0.0" width="243" height="65"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gez-fC-gCr" customClass="BEMCheckBox">
-                        <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
+                        <rect key="frame" x="8" y="7" width="54" height="51"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Gez-fC-gCr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8Yk-hj-ukz"/>
-                    <constraint firstAttribute="trailing" secondItem="6Uz-gp-IwO" secondAttribute="trailing" id="GlN-cr-vYh"/>
-                    <constraint firstItem="6Uz-gp-IwO" firstAttribute="leading" secondItem="Gez-fC-gCr" secondAttribute="trailing" constant="8" id="H0k-dq-1Lz"/>
-                    <constraint firstAttribute="bottom" secondItem="6Uz-gp-IwO" secondAttribute="bottom" id="J55-aE-5Wr"/>
-                    <constraint firstAttribute="bottom" secondItem="Gez-fC-gCr" secondAttribute="bottom" id="Moc-uK-ESV"/>
-                    <constraint firstItem="Gez-fC-gCr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ooX-4k-uZ1"/>
-                    <constraint firstItem="6Uz-gp-IwO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="s2O-Wy-wVu"/>
+                    <constraint firstItem="Gez-fC-gCr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="23Q-Io-AsY"/>
+                    <constraint firstItem="Gez-fC-gCr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="4if-RB-EkM"/>
+                    <constraint firstItem="Gez-fC-gCr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="GTR-1R-tqS"/>
+                    <constraint firstItem="6Uz-gp-IwO" firstAttribute="leading" secondItem="Gez-fC-gCr" secondAttribute="trailing" constant="15" id="TcC-fE-wIA"/>
                 </constraints>
             </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="6Uz-gp-IwO" firstAttribute="height" secondItem="njF-e1-oar" secondAttribute="height" id="903-b6-ouh"/>
+                <constraint firstItem="6Uz-gp-IwO" firstAttribute="top" secondItem="njF-e1-oar" secondAttribute="bottom" constant="-65" id="RjS-fw-17r"/>
+                <constraint firstItem="6Uz-gp-IwO" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="trailing" constant="-243" id="ZxF-UW-sCP"/>
+                <constraint firstItem="6Uz-gp-IwO" firstAttribute="width" secondItem="njF-e1-oar" secondAttribute="width" constant="-77" id="qA6-To-Mf7"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="cellLabel" destination="6Uz-gp-IwO" id="PU8-TU-51K"/>

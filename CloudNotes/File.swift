@@ -14,3 +14,4 @@ var notesArray = [String]()
 var fetchedNotes = [String]()
 let KEY_UID = "uid"
 
+

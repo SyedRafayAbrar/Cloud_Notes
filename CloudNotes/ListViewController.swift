@@ -7,13 +7,15 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ListViewController: UIViewController, UITableViewDelegate {
     @IBOutlet var listTable: UITableView!
     @IBOutlet var addList: UITextField!
+    var realmList:Results<List>!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+gettingFromRealm()
         // Do any additional setup after loading the view.
     }
 
@@ -23,11 +25,15 @@ class ListViewController: UIViewController, UITableViewDelegate {
     }
     override func viewDidAppear(_ animated: Bool) {
         listTable.reloadData()
+        gettingFromRealm()
     }
     
     
     @IBAction func AddListPressed(_ sender: Any) {
-        todoArray.append(addList.text!)
+        let ListObj = List()
+        ListObj._List = addList.text!
+        ListObj.writeRealm()
+        
         listTable.reloadData()
     }
     
@@ -44,41 +50,44 @@ class ListViewController: UIViewController, UITableViewDelegate {
     }
     */
 
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        addList.resignFirstResponder()
-        self.view.endEditing(true)
+
+    
+    func gettingFromRealm(){
+        realmList = uiRealm.objects(List.self)
+        self.listTable.reloadData()
     }
 
 }
-extension UIViewController {
-    func hideKeyboardWhenTappedAround() {
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
-        tap.cancelsTouchesInView = false
-        view.addGestureRecognizer(tap)
-    }
-    
-    
-    @objc func dismissKeyboard() {
-        
-  self.view.endEditing(true)
-    }
-}
+
 
 extension ListViewController:UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return todoArray.count
+        if realmList != nil {
+            return realmList.count
+        } else {
+            return 0
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let tempCell = Bundle.main.loadNibNamed("ListTableViewCell", owner: self, options: nil)?.first as! ListTableViewCell
-tempCell.cellLabel.text = todoArray[indexPath.row]
+tempCell.cellLabel.text = realmList[indexPath.row]._List
         return tempCell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+        return 65
+    
     }
 
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            try! uiRealm.write {
+                uiRealm.delete(realmList[indexPath.row])
+            }
+            listTable.reloadData()
+        }
+    }
     
     
     /**

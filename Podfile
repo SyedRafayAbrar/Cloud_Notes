@@ -11,5 +11,6 @@ pod 'Firebase/Firestore'
 pod 'Firebase/Auth'
 pod 'RealmSwift'
 pod 'SwiftKeychainWrapper'
+pod 'IQKeyboardManagerSwift'
 
 end

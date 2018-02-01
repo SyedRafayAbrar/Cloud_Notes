@@ -21,7 +21,7 @@ class LoginViewController: UIViewController {
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        if let _=KeychainWrapper.standard.string(forKey: KEY_UID){
+        if let _ = KeychainWrapper.standard.string(forKey: KEY_UID){
             performSegue(withIdentifier: "toMenu", sender: nil)
         }
     }
@@ -79,18 +79,18 @@ class LoginViewController: UIViewController {
         }
     }
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
-    
-    
-    /**
-     * Called when the user click on the view (outside the UITextField).
-     */
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
+//    func textFieldShouldReturn(textField: UITextField) -> Bool {
+//        textField.resignFirstResponder()
+//        return true
+//    }
+//    
+//    
+//    /**
+//     * Called when the user click on the view (outside the UITextField).
+//     */
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        self.view.endEditing(true)
+//    }
   
     func completeLogin(id:String){
         KeychainWrapper.standard.set(id, forKey: KEY_UID)

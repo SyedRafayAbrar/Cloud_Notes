@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>GMSInstanceIDDeviceDataVersion</key>
+	<string>ABFEt1XBbk0-chqjOwb4ovfndUL6Or5Lf-jIxr6K5-wMt6-lPjDsp3dfcks8e7GZfp7IuAfTCGrCRW95zCwEpeAja3GegmJ7ZY3R-OyYoOPmr8DHjJNGt0HHYkPheDHaeqgo4J9anT8UeUjhG-CjURweoRpMHnlQWWHs62t4hZdlgw2AGQbT_wDLHbp3QuvBbnaiHO-oIybCKDk4xngtc3kZyhNqIa2_NRrqqMuHbMvtnscW1np0Qdtrrc6lT-S3HF0Cdac0Gc0y2ZfF3_0w9jYPuzEPVcB6SS8Mpu6hIrKHqMSdIOPQGNm_x5oOZ1DFK-onu50Mz_L_LschH8ICpN1GvQ3g6_TcZSo0ikmtJiznM4mH3EwflwY</string>
+	<key>GMSInstanceIDDigestKey</key>
+	<string>+S4C8vbfA+sY6FQT2JTKkQ==</string>
+	<key>GMSInstanceIDGServicesData</key>
+	<dict>
+		<key>android_id</key>
+		<string>4931325761667297921</string>
+		<key>device_country</key>
+		<string>pk</string>
+		<key>device_registration_time</key>
+		<string>1517418000000</string>
+		<key>ios_device</key>
+		<string>1</string>
+	</dict>
+	<key>GMSInstanceIDLastCheckinTimestampKey</key>
+	<integer>1517419979000</integer>
+	<key>GMSInstanceIDVersionInfo</key>
+	<string>kxTMXLONm4YUsHCPESFjClXLDHbUFBY</string>
+</dict>
+</plist>
