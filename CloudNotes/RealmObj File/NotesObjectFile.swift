@@ -21,7 +21,7 @@ class Notes:Object{
 extension Notes {
         func writeRealm() {
             try! uiRealm.write {
-                uiRealm.add(self, update: true)
+                uiRealm.add(self, update: .all)
             }
         }
  

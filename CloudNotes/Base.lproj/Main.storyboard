@@ -1,22 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="AlNile.ttc">
-            <string>AlNile-Bold</string>
-        </array>
-        <array key="Kefa.ttf">
-            <string>Kefa-Regular</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Starter View Controller-->
         <scene sceneID="Dpu-r0-bB4">
@@ -36,7 +28,7 @@
                                     <color key="titleColor" red="0.23911035776914272" green="0.55440989847715749" blue="0.27002094397097087" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="560-zF-ZWl" kind="showDetail" action="showViewController:sender:" id="IaS-bP-bbz"/>
+                                    <segue destination="560-zF-ZWl" kind="showDetail" id="IaS-bP-bbz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fN-o0-U7B">
@@ -200,7 +192,7 @@
                     <connections>
                         <outlet property="emailText" destination="erD-X4-5AY" id="fhe-OL-5RT"/>
                         <outlet property="passwordtext" destination="UYc-ii-oFy" id="hEJ-sE-7Dn"/>
-                        <segue destination="okh-SA-Fqq" kind="show" identifier="toMenu" id="IXY-ER-BOm"/>
+                        <segue destination="okh-SA-Fqq" kind="presentation" identifier="toMenu" modalTransitionStyle="crossDissolve" id="IXY-ER-BOm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -339,7 +331,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53C-Jd-iFK">
-                                <rect key="frame" x="16" y="26" width="20" height="18"/>
+                                <rect key="frame" x="16" y="26" width="16" height="18"/>
                                 <color key="backgroundColor" red="0.1323564403553299" green="0.1323564403553299" blue="0.1323564403553299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" backgroundImage="icons8-home"/>
                                 <connections>
@@ -347,7 +339,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEN-97-H7k">
-                                <rect key="frame" x="87" y="20" width="72" height="30"/>
+                                <rect key="frame" x="87.5" y="20" width="72" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="72" id="pr8-45-lfl"/>
                                 </constraints>
@@ -361,7 +353,7 @@
                                 <rect key="frame" x="0.0" y="50" width="315" height="599"/>
                                 <subviews>
                                     <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gTy-vI-Sjj">
-                                        <rect key="frame" x="-0.5" y="-0.5" width="315" height="599"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="599"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="p11-Ra-Zan">
                                             <rect key="frame" x="0.0" y="0.0" width="315" height="599"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -376,7 +368,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cua-KG-xux">
-                                        <rect key="frame" x="131.5" y="517" width="51" height="30"/>
+                                        <rect key="frame" x="132" y="517" width="51" height="30"/>
                                         <state key="normal" title="Update"/>
                                         <connections>
                                             <action selector="updateCell:" destination="560-zF-ZWl" eventType="touchUpInside" id="Do1-qS-GV7"/>
@@ -447,7 +439,7 @@
                                     <subviews>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BBB-E9-muP">
                                             <rect key="frame" x="0.0" y="0.0" width="335" height="444"/>
-                                            <color key="backgroundColor" red="1" green="0.97123344852708171" blue="0.79240637014037985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" red="0.99031574971194092" green="1" blue="0.94341425064476092" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="textColor" red="1" green="0.12749251468080758" blue="0.18222194755689025" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="18"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

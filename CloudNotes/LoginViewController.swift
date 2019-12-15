@@ -37,13 +37,14 @@ class LoginViewController: UIViewController {
         Auth.auth().signIn(withEmail: emailText.text!, password: passwordtext.text!) { (user, error) in
             if error != nil {
                 print(error!)
-                let alert=UIAlertController(title: "Error", message: "Password Shold be 6 or more than 6 characters", preferredStyle: UIAlertControllerStyle.alert)
+                let alert=UIAlertController(title: "Error", message: "\(error!)", preferredStyle: UIAlertControllerStyle.alert)
                 let cancel = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
                 alert.addAction(cancel)
                 self.present(alert, animated: true, completion: nil)
                 Auth.auth().createUser(withEmail: self.emailText.text!, password: self.passwordtext.text!) { (user, error) in
                     if error != nil {
-                        let alert=UIAlertController(title: "Error", message: "Password Shold be 6 or more than 6 characters", preferredStyle: UIAlertControllerStyle.alert)
+                        
+                        let alert=UIAlertController(title: "Error", message: "\(error!)", preferredStyle: UIAlertControllerStyle.alert)
                         let cancel = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
                         alert.addAction(cancel)
                         print(error!)
@@ -51,15 +52,16 @@ class LoginViewController: UIViewController {
                     }else {
                         if let user = user {
                             self.completeLogin(id: user.uid)
+                            DispatchQueue.main.async {
+                                [unowned self] in
+                                self.performSegue(withIdentifier: "toMenu", sender: self)
+                            }
                         }
                 
                         print("++++new User Created")
                         
                         self.present(alert, animated: true, completion: nil)
-                        DispatchQueue.main.async {
-                            [unowned self] in
-                            self.performSegue(withIdentifier: "toMenu", sender: self)
-                        }
+                       
                     }
 
                 }

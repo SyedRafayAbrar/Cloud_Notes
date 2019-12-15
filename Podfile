@@ -9,7 +9,7 @@ target 'CloudNotes' do
 pod 'Firebase/Core'
 pod 'Firebase/Firestore'
 pod 'Firebase/Auth'
-pod 'RealmSwift'
+pod 'RealmSwift', '~> 4.1.0'
 pod 'SwiftKeychainWrapper'
 pod 'IQKeyboardManagerSwift'
 
